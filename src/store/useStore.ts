@@ -30,7 +30,7 @@ interface AppState {
   tick: () => void;
 }
 
-export const useStore = create<AppState>()((set, get) => ({
+export const useStore = create<AppState>()((set) => ({
   activeOverlay: null,
   setActiveOverlay: (overlay) => set({ activeOverlay: overlay }),
 
