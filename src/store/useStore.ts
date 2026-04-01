@@ -34,7 +34,7 @@ export const useStore = create<AppState>()((set) => ({
   activeOverlay: null,
   setActiveOverlay: (overlay) => set({ activeOverlay: overlay }),
 
-  userName: localStorage.getItem("pomodoro_name") || "1T (T) Kásio",
+  userName: localStorage.getItem("pomodoro_name") || "QUAL SEU NOME?",
   setUserName: (name) => {
     localStorage.setItem("pomodoro_name", name);
     set({ userName: name });
